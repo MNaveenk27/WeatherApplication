@@ -4,17 +4,15 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class WeatherResponse {
-    private String city;
-    private String region;
-    private String country;
-    private String condition;
-    private Double temp;
-
+public class ForeCast {
+    private WeatherResponse weatherRes;
+    public List<DayTemp> dayTemp;
+    private List<Forecastday> forecastday;
 
 
 }
-

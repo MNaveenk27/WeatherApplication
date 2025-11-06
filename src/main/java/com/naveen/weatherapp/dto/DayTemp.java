@@ -4,17 +4,14 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDate;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class WeatherResponse {
-    private String city;
-    private String region;
-    private String country;
-    private String condition;
-    private Double temp;
-
-
+public class DayTemp {
+    private String date;
+    private Double minTemp;
+    private Double maxTemp;
+    private Double avgTemp;
 
 }
-
