@@ -10,8 +10,9 @@ import java.time.LocalDate;
 @NoArgsConstructor
 public class DayTemp {
     private String date;
-    private Double minTemp;
-    private Double maxTemp;
-    private Double avgTemp;
+    private double minTemp;
+    private double maxTemp;
+    private double avgTemp;
+    private String condition; // Add this field
 
 }
