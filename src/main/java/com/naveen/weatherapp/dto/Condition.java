@@ -1,13 +1,15 @@
 package com.naveen.weatherapp.dto;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-
+import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
+@NoArgsConstructor
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Condition {
-    public String text;
-    public String icon;
-    public int code;
-    public Condition(){};
+    private String text;
+    private String icon;
+    private int code;
 }
