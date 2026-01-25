@@ -63,7 +63,7 @@ const weatherIcons = {
 
 // API Configuration
 const API_CONFIG = {
-    baseUrl: 'https://weather-application-hvs8.vercel.app/',
+    baseUrl: 'import.meta.env.VITE_API_URL',
     endpoint: '/weather/forecast'
 };
 
